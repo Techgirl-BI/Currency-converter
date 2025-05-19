@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.app{
+    border: .3em solid rgb(74, 134, 97);
+    margin: auto;
+    width: 20%;
+    text-align: center;
+    padding: 1em;
+    border-radius: 2rem;
+    margin-top: 6rem;
+}
+.title{
+    padding: 1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.amount{
+    padding: .8rem;
+    width: 70%;
+    border: .1rem solid gray;
+    border-radius: .8rem;
+    margin-bottom: 1.2rem;
+}
+.toCurrency, .fromCurrency{
+    padding: .8rem;
+    width: 70%;
+    border: .1rem solid gray;
+    border-radius: .8rem;
+    margin-bottom: 1.2rem;
+}
+.equals{
+    font-weight: bold;
+    font-size: 4rem;
+}
