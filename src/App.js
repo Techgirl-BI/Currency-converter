@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import RateHistory from './components/RateHistory';
 
 function App() {
   const [currencies, setCurrencies] = useState([])
@@ -69,10 +70,11 @@ function App() {
           currencies.map((currency) => <option value={currency} key={currency}>{currency}</option>)
         }
       </select>
-      <div>
-        <h1>{convertedAmount}{toCurrency}</h1>
-        <p>{amount} {fromCurrency}=  {convertedAmount}{toCurrency}</p>
+      <div className='result'>
+        <h1>{convertedAmount} {toCurrency}</h1>
+        <p>{amount} {fromCurrency}=  {convertedAmount} {toCurrency}</p>
       </div>
+      <RateHistory/>
     </div>
   );
 }
